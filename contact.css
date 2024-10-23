@@ -1,0 +1,432 @@
+
+body {
+	background-image:url(../Images/BuddhaImage04.jpg);
+	
+	background-size: cover;
+	
+}
+
+.grid-container{
+	display: grid;
+	padding: 20px;
+	margin: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 40px;
+	border-radius: 40px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Header Styling starts*/
+.site-header {
+		grid-area: 1 / 1 / 1 / 5;
+		text-align: center;
+		color: rgb(182, 66, 66);
+				
+}	
+
+.site-header h1 {
+	font-weight:bold;
+	font-size: 300%;
+	font-family: cursive;
+}
+
+.site-header p {
+	text-align: center;
+	font-family: cursive;
+	text-decoration:solid;
+	font-size: 150%;
+}
+
+
+
+/* Header Styling ends*/
+
+/* Caption 1 Styling starts*/
+
+.caption1 {
+	grid-area: 2 / 2 / span 1 / span 2;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	color:antiquewhite;
+	box-sizing: content-box;
+	font-family: cursive;
+	
+	
+}
+
+.caption1 h3 {
+	font-weight:bold;
+	font-family: cursive;
+	
+}
+
+.caption1 p {
+	text-align: center;
+	font-family: cursive;
+}
+
+/* Caption 1 Styling ends*/
+
+
+.site-menu {
+	grid-area: 3 / 2 / 4 / 4;
+	align-content: center;
+	padding-left: 200px;
+}
+
+
+/* Main area Styling starts*/
+
+form {
+    background-color: rgba(162, 148, 171, 0.2);
+    padding: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    padding-left: 100px;
+    
+}
+
+input[type="submit"] {
+        color:white;
+        display:block;
+        background-color: #6d755f;
+        border: 1px solid #6d755f;
+        border-radius: 5px;
+        width:100%;
+        padding: 15px 20px;
+        font-size: larger;
+
+
+}
+
+
+
+input[type="firstName"],
+input[type="emailid"],
+input[type="yourmessage"] {
+
+    display:block;
+    box-sizing: border-box;
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+        
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.main-area {
+	grid-area: 4 / 1 / span 3 / span 2;
+	justify-content: center;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: cursive;
+	color:rgb(150, 143, 198);
+}
+
+
+.main-area h3 {
+	font-family: cursive;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Main area Styling ends*/
+
+
+/* Side area Styling starts*/
+
+.side-area1 {
+	grid-area: 4 / 3 / 4 / 5;
+	justify-content: center;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: cursive;
+	color:rgb(212, 204, 192);
+	border-radius: 30px;
+	background-color: rgba(162, 148, 171, 0.2);
+	
+}
+
+.side-area2 {
+	grid-area: 5 / 3 / 5 / 5;
+	justify-content: center;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: cursive;
+	color:antiquewhite;
+	border-radius: 30px;
+	background-color: rgba(162, 148, 171, 0.2);
+	
+
+}
+
+.side-area1 h4 {
+	font-family: cursive;
+}
+
+.side-area2 h4 {
+	font-family: cursive;
+}
+
+/* Side area Styling starts*/
+
+
+.playvid {
+	grid-area: 6 / 3 / 6 / 5;
+	justify-self: center;
+	
+	
+	
+}
+
+/* Site Navigation */
+
+.site-nav li 
+{
+	list-style: none;
+	text-decoration: none;
+	float: left;
+	margin: 10px;
+}
+
+.site-nav ul
+{
+	margin:0;
+	padding:0;
+	display: inline;
+	color: #858d78;
+}
+
+.site-nav a 
+{
+	display:block;
+	text-decoration: none;
+	padding: 5px 10px;
+	border:1px solid #b4bca6;
+	border-radius: 5px;
+}
+
+.site-nav a:hover 
+{
+	background-color: #d0d6c3;
+}
+
+@media screen and (max-width:480px)
+{
+	.site-nav li
+	{
+		width:33.33%;
+		margin-right:0;
+		font-size: 80%;
+	}
+	.site-nav a 
+	{
+		text-align: center;
+	};
+}
+
+/* End Site Navigation */
+
+
+
+footer {
+	text-align: center;
+	font-size: 115%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: 50px;
+	color:rgb(178, 49, 49);
+	font-family: cursive;
+}
+
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+	.grid-container {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.site-header h1 {
+		font-size: 100%;
+	}
+
+	.site-header p {
+		font-size: 100%;
+	}
+  }
+
+
+
+
+
+
+
+/*
+body {
+	background: url(../Images/BuddhaImage01.jpg) left top no-repeat, url(../Images/BuddhaImage01.jpg) right top no-repeat;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-size: 180px 120px;
+	padding:20px;
+	background-attachment: scroll;
+	background-color:#a1a796;
+	}
+
+	header {
+		
+		font-weight: normal;
+		font-size: 100%;
+		text-align: center;
+	}
+
+	header h1{
+		margin:0;
+		font-size: 300%;
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-style:italic;
+	}
+
+	header p {
+		margin:0;
+		font-size: 100%;
+	}
+
+.container {
+	max-width: 1300px;
+    margin-left: auto;
+	margin-right: auto;
+	box-sizing:border-box;
+	padding-top:40px;
+	padding-left:40px;
+	
+	
+	
+}
+
+.content-area 
+{
+	border-top: 1px solid #7a9a3f;
+	border-bottom: 1px solid #7a9a3f;
+	padding-bottom:40px;
+	padding-top:40px;
+	
+}
+
+.caption2
+{ 	
+	margin: 20px 250px 20px 250px;
+	text-align: center;
+	font-size:85%;
+}
+
+@media screen and (max-width:480px)
+{
+	.caption2 
+	{
+		width: auto;
+		margin:auto;
+	}
+}
+
+@media screen and (max-width:700px)
+{
+	.caption2 
+	{
+		width: auto;
+		margin:auto;
+	}
+}
+
+
+
+
+
+.main-area {
+	font-size: 90%;
+	max-width: 55%;
+	float: left;
+	box-sizing: border-box;
+	margin:auto;
+	text-align: justify;
+}
+
+.side-area1 h4 {
+	text-align: center;
+}
+
+.side-area2 h4 {
+	text-align: center;
+}
+
+.side-area1
+{
+	width:40%;
+	margin-bottom: 20px;
+	float: right;
+	text-align: justify;
+	font-size: 75%;
+	background-color: #829460;
+	border-radius: 25px;
+	padding-left:20px;
+	padding-right: 20px;
+	
+}
+
+.side-area2
+{
+	width:40%;
+	
+	float: right;
+	text-align: justify;
+	font-size: 75%;
+	background-color: #7c8594;
+	border-radius: 25px;
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+video
+{
+	padding-left:100px;
+	padding-top:20px;
+	
+}
+
+.fix {
+	clear:both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+
+*/
+
+
